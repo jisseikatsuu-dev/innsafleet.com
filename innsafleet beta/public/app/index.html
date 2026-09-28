@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Control de Patio</title>
+<link rel="stylesheet" href="/publico/base.css" />
+<link rel="stylesheet" href="/vendor/leaflet/leaflet.css" />
+<link rel="stylesheet" href="/estilos.css" />
+</head>
+<body>
+<div class="app">
+  <header class="enc">
+    <div class="enc-izq">
+      <div class="marca">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9FD3DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"></rect><path d="M3 10h18"></path><circle cx="7.5" cy="19" r="1.6"></circle><circle cx="16.5" cy="19" r="1.6"></circle></svg>
+        <span id="empresa">Control de Patio</span>
+      </div>
+      <nav aria-label="Principal" class="menu">
+        <a href="#/inicio" data-vista="inicio">Inicio</a>
+        <a href="#/rutas" data-vista="rutas">Rutas</a>
+        <a href="#/unidades" data-vista="unidades">Unidades</a>
+        <a href="#/combustible" data-vista="combustible">Combustible</a>
+        <a href="#/reportes" data-vista="reportes">Reportes</a>
+        <a href="#/mantenimiento" data-vista="mantenimiento">Mantenimiento</a>
+        <a href="#/checklist" data-vista="checklist">Checklist</a>
+      </nav>
+    </div>
+    <div class="enc-der">
+      <span id="estado-samsara" class="pastilla-enc"></span>
+      <span id="fecha-hoy"></span>
+      <span id="quien"></span>
+      <button type="button" id="btn-salir" class="btn-enc">Salir</button>
+    </div>
+  </header>
+  <main id="vista" class="pagina" tabindex="-1"></main>
+</div>
+<div id="modal-fondo" class="modal-fondo" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+    <div class="modal-enc"><h2 id="modal-titulo"></h2><button type="button" class="modal-x" id="modal-cerrar" aria-label="Cerrar">×</button></div>
+    <div id="modal-cuerpo" class="modal-cuerpo"></div>
+  </div>
+</div>
+<div id="aviso" class="aviso" role="status" aria-live="polite" hidden></div>
+<script src="/vendor/leaflet/leaflet.js"></script>
+<script src="/js/nucleo.js"></script>
+<script src="/js/vistas/inicio.js"></script>
+<script src="/js/vistas/rutas.js"></script>
+<script src="/js/vistas/unidades.js"></script>
+<script src="/js/vistas/combustible.js"></script>
+<script src="/js/vistas/reportes.js"></script>
+<script src="/js/vistas/mantenimiento.js"></script>
+<script src="/js/vistas/checklist.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>

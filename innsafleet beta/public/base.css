@@ -1,0 +1,46 @@
+/* Fuentes locales (sin CDN: compatibles con la CSP) */
+@font-face { font-family: 'IBM Plex Sans'; font-weight: 400; font-display: swap; src: url('/vendor/fuentes/plex-sans/ibm-plex-sans-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Sans'; font-weight: 500; font-display: swap; src: url('/vendor/fuentes/plex-sans/ibm-plex-sans-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Sans'; font-weight: 600; font-display: swap; src: url('/vendor/fuentes/plex-sans/ibm-plex-sans-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Sans'; font-weight: 700; font-display: swap; src: url('/vendor/fuentes/plex-sans/ibm-plex-sans-latin-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Mono'; font-weight: 400; font-display: swap; src: url('/vendor/fuentes/plex-mono/ibm-plex-mono-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Mono'; font-weight: 500; font-display: swap; src: url('/vendor/fuentes/plex-mono/ibm-plex-mono-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'IBM Plex Mono'; font-weight: 600; font-display: swap; src: url('/vendor/fuentes/plex-mono/ibm-plex-mono-latin-600-normal.woff2') format('woff2'); }
+
+:root {
+  --acento: #0F5F73;
+  --acento-osc: #0A4555;
+  --acento-suave: #E3EEF0;
+  --sel: #EEF4F5;
+  --tinta: #1C1F22;
+  --tinta-2: #3A3F44;
+  --gris: #5B6167;
+  --gris-2: #8A8F94;
+  --fondo: #F3F2EE;
+  --fondo-2: #F8F7F4;
+  --seg: #E6E4DE;
+  --borde: #E2E0DA;
+  --borde-2: #ECEAE4;
+  --linea: #F0EEE9;
+  --control: #D6D3CC;
+  --warn: #C2410C;
+  --warn-txt: #9A3412;
+  --warn-osc: #8A3410;
+  --warn-suave: #FDE7DA;
+  --warn-fondo: #FFF4EC;
+  --warn-borde: #F3D3BC;
+  --watch: #D69E2E;
+  --watch-txt: #7A4E0A;
+  --watch-suave: #FBF1D9;
+  --f: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { margin: 0; }
+body { font-family: var(--f); background: var(--fondo); color: var(--tinta); font-size: 14px; line-height: 1.4; }
+a { color: var(--acento); } a:hover { color: var(--acento-osc); }
+button, input, select, textarea { font: inherit; color: inherit; }
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+:focus-visible { outline: 3px solid #1D4ED8; outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
