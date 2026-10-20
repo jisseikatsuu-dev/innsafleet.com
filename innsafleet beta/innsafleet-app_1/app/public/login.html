@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Control de Patio · Entrar</title>
+<link rel="stylesheet" href="/publico/base.css" />
+<link rel="stylesheet" href="/publico/login.css" />
+</head>
+<body>
+  <main class="acceso">
+    <header>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9FD3DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"></rect><path d="M3 10h18"></path><circle cx="7.5" cy="19" r="1.6"></circle><circle cx="16.5" cy="19" r="1.6"></circle></svg>
+      <span>Control de Patio</span>
+    </header>
+    <form id="form-login" novalidate>
+      <h1>Iniciar sesión</h1>
+      <p>Entra con tu usuario de despacho o con la cuenta de invitado.</p>
+      <label for="usuario">Usuario</label>
+      <input id="usuario" name="usuario" autocomplete="username" maxlength="60" required autofocus />
+      <label for="password">Contraseña</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" maxlength="200" required />
+      <button type="submit" id="btn">Entrar</button>
+      <div id="error" role="alert" aria-live="polite"></div>
+    </form>
+  </main>
+  <script src="/publico/login.js"></script>
+</body>
+</html>
